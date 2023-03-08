@@ -1,0 +1,100 @@
+/* Definição de estilos para o corpo da página */
+
+body {
+	font-family: Arial, sans-serif;
+	margin: 0;
+	padding: 0;
+}
+
+/* Definição de estilos para o cabeçalho da página */
+
+header {
+	background-color: #333;
+	color: #fff;
+	padding: 20px;
+}
+
+header h1 {
+	margin: 0;
+	font-size: 36px;
+}
+
+nav {
+	float: right;
+	margin-top: 10px;
+}
+
+nav ul {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+nav li {
+	display: inline-block;
+	margin-left: 20px;
+}
+
+nav li:first-child {
+	margin-left: 0;
+}
+
+nav a {
+	color: #fff;
+	text-decoration: none;
+	font-weight: bold;
+	font-size: 18px;
+	transition: color 0.3s ease;
+}
+
+nav a:hover {
+	color: #ff7f50;
+}
+
+/* Definição de estilos para a seção principal da página */
+
+main {
+	padding: 40px;
+}
+
+main p {
+	font-size: 20px;
+	line-height: 1.5;
+	margin-bottom: 20px;
+}
+
+/* Definição de estilos para o rodapé da página */
+
+footer {
+	background-color: #333;
+	color: #fff;
+	padding: 10px;
+	text-align: center;
+	font-size: 14px;
+}
+
+footer p {
+	margin: 0;
+}
+
+/* Definição de estilos para os botões de registro e login */
+
+nav a.btn {
+	background-color: #ff7f50;
+	color: #fff;
+	padding: 10px 20px;
+	border-radius: 5px;
+	transition: background-color 0.3s ease;
+}
+
+nav a.btn:hover {
+	background-color: #fff;
+	color: #ff7f50;
+}
+
+/* Definição de estilos para os links do menu de navegação quando selecionados */
+
+nav a.selected {
+	color: #ff7f50;
+	border-bottom: 3px solid #ff7f50;
+}
