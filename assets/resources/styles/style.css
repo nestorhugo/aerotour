@@ -1,9 +1,9 @@
 /* Definição de estilos para o corpo da página */
 
 body {
-	font-family: Arial, sans-serif;
+	font-family: 'Montserrat', sans-serif;
 	margin: 0 auto;
-	
+	color: #4F4F4F;
 }
 
 /* Definição de estilos para o cabeçalho da página */
