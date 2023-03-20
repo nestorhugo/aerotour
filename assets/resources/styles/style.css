@@ -1,3 +1,8 @@
+header {
+	background-color: #00AFFF;
+	color: #fff;
+}
+
 /* Definição de estilos para o corpo da página */
 
 body {
@@ -85,32 +90,9 @@ footer {
 	color: #fff;
 	padding: 10px;
 	text-align: center;
-	font-size: 14px;
 }
 
 footer p {
 	margin: 0;
-}
-
-/* Definição de estilos para os botões de registro e login */
-
-nav a.btn {
-	background-color: #FCA311;
-	color: #fff;
-	padding: 10px 20px;
-	border-radius: 5px;
-	transition: background-color 0.3s ease;
-}
-
-nav a.btn:hover {
-	background-color: #fff;
-	color: #FCA311;
-}
-
-/* Definição de estilos para os links do menu de navegação quando selecionados */
-
-nav a.selected {
-	color: #FCA311;
-	border-bottom: 3px solid #FCA311;
 }
 
