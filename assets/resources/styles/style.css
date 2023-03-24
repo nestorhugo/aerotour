@@ -7,40 +7,15 @@ header {
 /* Definição de estilos para a seção principal da página */
 
 main {
-	padding: 40px;
-	max-width: 1080px;
-	margin: 0 auto;
+	max-width: 1920px;
 	text-align: center;
 }
 
+
 main p {
-	font-size: 20px;
+	font-size: 18px;
 	line-height: 1;
 	margin-bottom: 20px;
-}
-
-/* Definição de estilos para as box */
-
-.box-pic {
-	margin-bottom: 20px;
-	background-color: #ffffff;
-	padding: 20px;
-	width: 30%;
-}
-
-.box-text{
-	margin-bottom: 20px;
-	text-align: left;
-	background-color: #ffffff;
-	padding: 20px;
-	width: 70%;
-}
-
-.box img {
-	max-width: 100%;
-	height: auto;
-	margin-bottom: 5px;
-	object-fit: cover;
 }
 
 /* Definição de estilos para o rodapé da página */
