@@ -1,5 +1,5 @@
 # aerotour
-# Prot[otipo
+# Protótipo
 https://www.figma.com/file/tf5weJtusWI3nirocFDlnW/AeroTour?node-id=0%3A1&t=I1GtieR6cwY5UNIx-1
 
 # Checkist
