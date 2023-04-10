@@ -1,13 +1,15 @@
 # aerotour
+Projeto da disciplina de Desenvolvimento Web II - UTFPR, Ministrado pelo professor Roni Banaszewski.
+AeroTour é uma empresa fictícia que realiza serviços de agência de viagens.
+
 # Protótipo
 https://www.figma.com/file/tf5weJtusWI3nirocFDlnW/AeroTour?node-id=0%3A1&t=I1GtieR6cwY5UNIx-1
-
 # Checkist
 
 Caixas de Diálogo
 
 - [ ] prompt
-- [ ] alert
+- [x] alert
 - [ ] confirm
 
 Temporizadores
@@ -38,7 +40,7 @@ Eventos
 Acesso aos elementos DOM do HTML
 
 - [ ] Via referência DOM pelo id do elemento HTML
-- [ ] Via getElementByID()
+- [x] Via getElementByID()
 - [ ] Via getElementsByName()
 - [ ] Via getElementsByTagName()
 - [ ] Via seletores CSS usados na função querySelector() ou querySelectorAll()
