@@ -50,32 +50,40 @@
                     <div class="col-12">
                         <div class="d-flex flex-column">
                             <p class="text mb-1">Nome Completo</p>
-                            <input class="form-control mb-3" type="text" placeholder="João da Silva">
+                            <input class="form-control mb-3" type="text" placeholder="João da Silva" id="nomeCompleto">
+                        </div>
+                    </div>
+					<div class="col-12">
+                        <div class="d-flex flex-column">
+                            <p class="text mb-1">CPF</p>
+                            <input class="form-control mb-3" type="text" placeholder="123.456.789-10" id="cpf">
                         </div>
                     </div>
                     <div class="col-12">
                         <div class="d-flex flex-column">
                             <p class="text mb-1">Numero do Cartão</p>
-                            <input class="form-control mb-3" type="text" placeholder="1234 5678 901234">
+                            <input class="form-control mb-3" type="text" placeholder="1234 5678 901234" id="numeroCartao">
                         </div>
                     </div>
                     <div class="col-6">
                         <div class="d-flex flex-column">
                             <p class="text mb-1">Validade</p>
-                            <input class="form-control mb-3" type="text" placeholder="mm/yyyy">
+                            <input class="form-control mb-3" type="text" placeholder="mm/yyyy" id="validade">
                         </div>
                     </div>
                     <div class="col-6">
                         <div class="d-flex flex-column">
                             <p class="text mb-1">CVV</p>
-                            <input class="form-control mb-3 pt-2 " type="password" placeholder="***">
+                            <input class="form-control mb-3 pt-2 " type="password" placeholder="***" id="cvv">
                         </div>
                     </div>
 
-                    <a href="#" class="btn btn-primary py-2 mb-3" id="botaoCompra">FINALIZAR COMPRA</a>
+                    <a href="#" class="btn btn-primary py-2 mb-3" id="botaoCompra" onclick="return validarFormularioCompra();">FINALIZAR COMPRA</a>
+
                 </div>
             </div>
         </div>
+		  
 
 	</main>
 	<script src="/app/pages/checkout/checkout.js"></script>

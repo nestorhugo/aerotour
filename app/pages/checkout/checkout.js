@@ -1,8 +1,32 @@
-let meuBotao = document.getElementById("botaoCompra");
+function validarFormularioCompra() {
+  let nomeCompleto = document.getElementById("nomeCompleto").value.trim();
+  let cpf = document.getElementById("cpf").value.trim();
+  let numeroCartao = document.getElementById("numeroCartao").value.trim();
+  let validade = document.getElementById("validade").value.trim();
+  let cvv = document.getElementById("cvv").value.trim();
 
-meuBotao.addEventListener("click", function() {
-    window.alert("Compra realizada com sucesso!");
-    setTimeout(function() {
+  if (nomeCompleto === "" || cpf.length !== 11 || isNaN(cpf) ||
+      numeroCartao.length !== 14 || isNaN(numeroCartao) ||
+      validade.length !== 6 || isNaN(validade) ||
+      cvv.length !== 3 || isNaN(cvv)) {
+    alert("Por favor, preencha todos os campos corretamente.");
+    return false;
+  }
+
+  return true;
+}
+
+function finalizarCompraComSucesso(mensagem, tempo) {
+  let meuBotao = document.getElementById("botaoCompra");
+
+  meuBotao.addEventListener("click", function() {
+    if (validarFormularioCompra()) {
+      window.alert(mensagem);
+      setTimeout(function() {
         window.location.href = "/index.html";
-    }, 2000); 
-});
+      }, tempo); 
+    }
+  });
+}
+
+finalizarCompraComSucesso("Compra realizada com sucesso!", 2000);
