@@ -6,14 +6,14 @@ https://www.figma.com/file/tf5weJtusWI3nirocFDlnW/AeroTour?node-id=0%3A1&t=I1Gti
 
 Caixas de Diálogo
 
-- [ ] prompt
-- [x] alert
-- [ ] confirm
+- [X] prompt
+- [X] alert
+- [X] confirm
 
 Temporizadores
 
-- [ ] setInterval
-- [ ] setTimeout
+- [X] setInterval
+- [X] setTimeout
 
 Funções
 
@@ -81,7 +81,7 @@ Formulário
   - [ ] Usar os atributos de validação dos inputs
   - [ ] Usar expressões regulares
 - [ ] Ler e escrever em elementos input com a propriedade value
-- [ ] Alterar o conteúdo de elementos div ou p com a propriedade innerHTML ou textContent
+- [X] Alterar o conteúdo de elementos div ou p com a propriedade innerHTML ou textContent
 - [ ] Manipulação de elemento de listagem, como checkbox, radio ou select
 - [ ] Acesso aos elementos de um formulário via hierarquia (caminho) de objetos, ou seja, array forms e elements
 
