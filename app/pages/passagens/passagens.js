@@ -14,3 +14,5 @@ function atualizarContagemRegressiva() {
 }
 
 setInterval(atualizarContagemRegressiva, 1000);
+
+
