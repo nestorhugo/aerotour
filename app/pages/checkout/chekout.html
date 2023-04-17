@@ -46,14 +46,14 @@
             <div class="card px-4">
                 <h3 class="pt-3">Finalizar compra</h3>
                 <p class="py-2">Detalhes de pagamento</p>
-                <div class="row gx-3">
+                <div class="row gx-3" id="formulario-compra">
                     <div class="col-12">
                         <div class="d-flex flex-column">
                             <p class="text mb-1">Nome Completo</p>
                             <input class="form-control mb-3" type="text" placeholder="João da Silva" id="nomeCompleto">
                         </div>
                     </div>
-					<div class="col-12">
+					      <div class="col-12">
                         <div class="d-flex flex-column">
                             <p class="text mb-1">CPF</p>
                             <input class="form-control mb-3" type="text" placeholder="123.456.789-10" id="cpf">
@@ -78,7 +78,7 @@
                         </div>
                     </div>
 
-                    <a href="#" class="btn btn-primary py-2 mb-3" id="botaoCompra" onclick="return validarFormularioCompra();">FINALIZAR COMPRA</a>
+                    <a href="#" class="btn btn-primary py-2 mb-3" id="botaoCompra" onsubmit="return validarFormularioCompra();">FINALIZAR COMPRA</a>
 
                 </div>
             </div>

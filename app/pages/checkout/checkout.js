@@ -16,6 +16,7 @@ function validarFormularioCompra() {
   return true;
 }
 
+
 function finalizarCompraComSucesso(mensagem, tempo) {
   let meuBotao = document.getElementById("botaoCompra");
 
