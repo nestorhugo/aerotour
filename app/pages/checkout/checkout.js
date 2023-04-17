@@ -1,3 +1,12 @@
+const cpfInput = document.getElementById('cpf');
+
+cpfInput.addEventListener('keydown', function(event) {
+  // verifica se o keyCode é um número de 0 a 9 ou a tecla backspace ou delete
+  if (!(event.keyCode >= 48 && event.keyCode <= 57) && event.keyCode != 8 && event.keyCode != 46) {
+    event.preventDefault();
+  }
+});
+
 function validarFormularioCompra() {
   let nomeCompleto = document.getElementById("nomeCompleto").value.trim();
   let cpf = document.getElementById("cpf").value.trim();
