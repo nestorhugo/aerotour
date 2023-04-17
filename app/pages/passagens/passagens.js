@@ -15,4 +15,6 @@ function atualizarContagemRegressiva() {
 
 setInterval(atualizarContagemRegressiva, 1000);
 
-
+window.onload = function() {
+  alert("Aproveite os preços! Sempre temos promoção!");
+};

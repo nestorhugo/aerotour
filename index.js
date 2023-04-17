@@ -16,3 +16,14 @@ viagemFernandoDeNoronha.exibir(); //exibindo info
 let viagemIntBuenosAires = new ViagemInternacional("Buenos Aires", "12/07/2023", 4, 159329, "ARS"); //criando
 viagemIntBuenosAires.exibir(); //exibindo info internacional
 
+var imagens = document.querySelectorAll(".card img");
+
+for (var i = 0; i < imagens.length; i++) {
+  imagens[i].onmousemove = function() {
+    this.style.border = "5px solid #0D6EFD";
+  };
+  
+  imagens[i].onmouseout = function() {
+    this.style.border = "none";
+  };
+}
