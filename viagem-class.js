@@ -7,7 +7,9 @@ export default class Viagem {
   }
 
   exibir() {
-    console.log(`Viagem para ${this.destino} - ${this.duracao} dias por R$ ${this.preco}`);
+    console.log(
+      `Viagem para ${this.destino} - ${this.duracao} dias por R$ ${this.preco}`
+    );
   }
 }
 
@@ -19,6 +21,10 @@ class ViagemInternacional extends Viagem {
   }
 
   exibir() {
-    console.log(`Viagem internacional para ${this.destino} - ${this.duracao} dias por ${this.preco} ${this.moeda}`);
+    // eslint-disable-next-line max-len
+    console.log(
+      // eslint-disable-next-line max-len
+      `Viagem internacional para ${this.destino} - ${this.duracao} dias por ${this.preco} ${this.moeda}`
+    );
   }
 }

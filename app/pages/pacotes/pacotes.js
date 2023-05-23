@@ -1,6 +1,9 @@
 window.prompt('Qual a nota que você daria para o nossa agência?');
 
-let darFeedback = confirm('Você gostaria de enviar seu feedback para nossa equipe?');
+// eslint-disable-next-line max-len
+let darFeedback = confirm(
+  'Você gostaria de enviar seu feedback para nossa equipe?'
+);
 
 if (darFeedback) {
   alert('Ótimo, seu feedback foi enviado com sucesso!');

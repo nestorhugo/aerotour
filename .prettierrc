@@ -1,7 +1,26 @@
 {
-    "trailingComma": "es5",
-    "tabWidth": 2,
-    "semi":true,
+    "arrayBracketSpacing": false,
+    "blockScopedVar": true,
+    "braceStyle": "1tbs",
+    "camelCase": "only",
+    "computedPropertySpacing": false,
+    "curly": true,
+    "endOfLine": "auto",
+    "eqeqeq": ["smart", "allow-null"],
+    "maxDepth": 3,
+    "maxLen": 100,
+    "maxStatements": 15,
+    "newCap": false,
+    "noExtendNative": true,
+    "noMixedSpacesAndTabs": true,
+    "noTrailingSpaces": true,
+    "noUnusedVars": "warn",
+    "noUseBeforeDefine": ["nofunc", "nofunc-init"],
+    "objectCurlySpacing": false,
+    "quoteProps": "as-needed",
     "singleQuote": true,
-    "printWidth": 80
-}
+    "semi": true,
+    "spaceBeforeFunctionParen": true,
+    "spaceUnaryOps": true
+  }
+  

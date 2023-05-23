@@ -8,13 +8,13 @@ function atualizarContagemRegressiva() {
   let horas = Math.floor((diferenca % 86400) / 3600);
   let minutos = Math.floor((diferenca % 3600) / 60);
   let segundos = diferenca % 60;
-  
 
-contagemRegressiva.innerHTML = `${dias} dias, ${horas} horas, ${minutos} minutos e ${segundos} segundos`;
+  // eslint-disable-next-line max-len
+  contagemRegressiva.innerHTML = `${dias} dias, ${horas} horas,${minutos} minutos e ${segundos} segundos`;
 }
 
 setInterval(atualizarContagemRegressiva, 1000);
 
-window.onload = function() {
-    alert('Aproveite os preços! Sempre temos promoção!');
+window.onload = function () {
+  alert('Aproveite os preços! Sempre temos promoção!');
 };
