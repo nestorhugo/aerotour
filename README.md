@@ -34,7 +34,6 @@ Eventos
 - [X] Evento de teclado - usar charCode ou keyCode
 - [ ] Eventos de formulário - onfocus e onblur
 - [ ] Imprimir alguma propriedade do objeto event recebido como parâmetro
-- [ ] Propagação de eventos no modelo bolha (usar target e currentTarget, ou seja, disparar o evento em um elemento filho e capturar em um elemento pai)
 
 Acesso aos elementos DOM do HTML
 
@@ -56,7 +55,8 @@ Objetos Nativos
 - [ ] Usar pelo menos 3 métodos de manipulação de array
 - [X] Usar laço de repetição (for..in ou for..of ou forEach)
 - [ ] Usar pelo menos 3 métodos para manipulação de string
-- [ ] String Template
+- [ ] String Template - - a String com crase e ${}
+- [ ] Manipulação do CSS de forma nativa via atributo style e classList
 
 Objetos
 
@@ -70,7 +70,7 @@ Qualidade do código
 - [ ] Usar um lint - mostrar a correção de pelo menos 5 problemas informados pelo lint (sugerido JSHint - usar o arquivo .jshintrc disponível no moodle)
 - [ ] Usar strict mode
 - [ ] Usar Module Pattern
-- [ ] Usar pasta assets e subpastas resources e libraries para organizar o código
+- [X] Usar pasta assets e subpastas resources e libraries para organizar o código
 - [X] Usar let ou const ao invés de var
 - [X] Nomes de arquivos minúsculos e separados por hífen (dashed-case)
 
@@ -79,8 +79,8 @@ Formulário
 - [X] Validação de formulário com onsubmit usando os métodos tradicionais
 - [ ] Validação de formulário com HTML5 API
   - [ ] Customizar as mensagens nos balões de mensagem
-  - [ ] Usar os atributos de validação dos inputs
-  - [ ] Usar expressões regulares
+  - [ ] Usar os atributos de validação dos inputs - required ou type="email" ou outros
+  - [ ] Usar expressões regulares para validação - usar no atributo pattern do respectivo input
 - [ ] Ler e escrever em elementos input com a propriedade value
 - [X] Alterar o conteúdo de elementos div ou p com a propriedade innerHTML ou textContent
 - [ ] Manipulação de elemento de listagem, como checkbox, radio ou select
@@ -97,12 +97,14 @@ jQuery
 - [ ] Manipulação do conteúdo de um input e div usando jQuery
 - [ ] Aplicar um plugin do jQuery (por exemplo, jQuery Mask Plugin)
 
-Web Storage
+Web Storage - LocalStorage ou SessionStorage
 
-- [ ] LocalStorage ou SessionStorage
-- [ ] Leitura e escrita de dados simples
-- [ ] Leitura e escrita de JSON
+- [ ] Leitura e escrita de dados simples - dados primivos como string, number, boolean
+- [ ] eitura e escrita de JSON - dado transformado a partir de um objeto
+- [ ] Criar e guardar um dado em um Cookie
 
-Ajax com Backend
+Requisições assíncronas
 
-- [ ] Implementação funcional (basta fazer funcionar uma requisição) do backend em ExpressJS na plataforma Node e requisições AJAX.
+- [ ] Requisições AJAX para uma implementação funcional do backend em ExpressJS na plataforma Node
+- [ ] (Obrigatório) Requisições AJAX para uma API Fake - JSON Server
+- [ ] Requisições AJAX para uma API Rest pública qualquer (Busca CEP API ou IBGE API ou outra).
