@@ -1,4 +1,4 @@
-let feedback = prompt('Qual a nota que você daria para o nossa agência?');
+window.prompt('Qual a nota que você daria para o nossa agência?');
 
 let darFeedback = confirm('Você gostaria de enviar seu feedback para nossa equipe?');
 

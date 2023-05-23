@@ -1,5 +1,5 @@
-let contagemRegressiva = document.getElementById("contagemRegressiva");
-let dataPromocao = new Date("2023-05-01");
+let contagemRegressiva = document.getElementById('contagemRegressiva');
+let dataPromocao = new Date('2023-05-01');
 
 function atualizarContagemRegressiva() {
   let diferenca = Math.floor((dataPromocao - Date.now()) / 1000);
@@ -10,11 +10,11 @@ function atualizarContagemRegressiva() {
   let segundos = diferenca % 60;
   
 
-  contagemRegressiva.innerHTML = `${dias} dias, ${horas} horas, ${minutos} minutos e ${segundos} segundos`;
+contagemRegressiva.innerHTML = `${dias} dias, ${horas} horas, ${minutos} minutos e ${segundos} segundos`;
 }
 
 setInterval(atualizarContagemRegressiva, 1000);
 
 window.onload = function() {
-  alert("Aproveite os preços! Sempre temos promoção!");
+    alert('Aproveite os preços! Sempre temos promoção!');
 };
