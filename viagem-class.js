@@ -11,6 +11,7 @@ export default class Viagem {
   }
 }
 
+// eslint-disable-next-line no-unused-vars
 class ViagemInternacional extends Viagem {
   constructor(destino, data, duracao, preco, moeda) {
     super(destino, data, duracao, preco);
