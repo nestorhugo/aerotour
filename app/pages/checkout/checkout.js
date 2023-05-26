@@ -1,3 +1,5 @@
+'use strict';
+
 let cpfInput = document.getElementById('cpf');
 
 cpfInput.addEventListener('keydown', function (event) {

@@ -1,3 +1,5 @@
+'use strict';
+
 let contagemRegressiva = document.getElementById('contagemRegressiva');
 let dataPromocao = new Date('2023-07-16');
 

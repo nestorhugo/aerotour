@@ -1,3 +1,5 @@
+'use strict';
+
 export default class Viagem {
   constructor(destino, data, duracao, preco) {
     this.destino = destino;

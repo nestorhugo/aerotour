@@ -1,3 +1,5 @@
+'use strict';
+
 import Viagem from './viagem-class.js';
 import ViagemInternacional from './viagem-class.js';
 

@@ -1,3 +1,5 @@
+'use strict';
+
 window.prompt('Qual a nota que você daria para o nossa agência?');
 
 // eslint-disable-next-line max-len
