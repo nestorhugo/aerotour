@@ -1,5 +1,5 @@
 let contagemRegressiva = document.getElementById('contagemRegressiva');
-let dataPromocao = new Date('2023-05-01');
+let dataPromocao = new Date('2023-07-16');
 
 function atualizarContagemRegressiva() {
   let diferenca = Math.floor((dataPromocao - Date.now()) / 1000);
