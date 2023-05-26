@@ -13,3 +13,11 @@ main p {
 .card:hover {
 	transform: scale(1.05);
   }
+
+input:invalid {
+	border-color: red;
+}
+
+input:valid {
+	border-color: green;
+}

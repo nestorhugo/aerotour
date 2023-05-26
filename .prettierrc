@@ -8,7 +8,7 @@
     "endOfLine": "auto",
     "eqeqeq": ["smart", "allow-null"],
     "maxDepth": 3,
-    "maxLen": 100,
+    "maxLen": 80,
     "maxStatements": 15,
     "newCap": false,
     "noExtendNative": true,
