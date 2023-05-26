@@ -1,7 +1,3 @@
-function valida() {
-  alert('Bem-vindo!');
-}
-
 document
   .getElementById('loginForm')
   .addEventListener('submit', function (event) {
