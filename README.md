@@ -83,7 +83,7 @@ Formulário
 - [x] Validação de formulário com HTML5 API
   - [x] Customizar as mensagens nos balões de mensagem
   - [x] Usar os atributos de validação dos inputs - required ou type="email" ou outros
-  - [x] Usar expressões regulares para validação - usar no atributo pattern do respectivo input
+  - [ ] Usar expressões regulares para validação - usar no atributo pattern do respectivo input
 - [x] Ler e escrever em elementos input com a propriedade value
 - [x] Alterar o conteúdo de elementos div ou p com a propriedade innerHTML ou textContent
 - [ ] Manipulação de elemento de listagem, como checkbox, radio ou select
