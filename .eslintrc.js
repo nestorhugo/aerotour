@@ -18,6 +18,7 @@ module.exports = {
     'computed-property-spacing': [2, 'never'],
     curly: 2,
     'eol-last': 2,
+    'no-undef': 'off',
     eqeqeq: [2, 'smart'],
     'max-depth': [1, 3],
     'max-len': [1, 80],

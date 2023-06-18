@@ -1,5 +1,37 @@
 'use strict';
 
+$(document).ready(function () {
+  // Seletores CSS - id, classe e tag
+  $('#name').css('color', 'blue');
+  $('.form-control').addClass('highlight');
+  $('label').css('font-weight', 'bold');
+
+  // Seletores hierárquicos estáticos
+  $('.form-group input[type="text"]').css('background-color', '#F8F8F8');
+
+  // Seletores hierárquicos dinâmicos via métodos do jQuery
+  $('input').on('input', function () {
+    $(this).parent().addClass('has-feedback');
+  });
+
+  // Efeitos fade ou slide
+  $('#flightForm').on('submit', function (e) {
+    e.preventDefault();
+    $('#message')
+      .text('Formulário enviado com sucesso!')
+      .fadeIn()
+      .delay(2000)
+      .fadeOut();
+  });
+
+  // Manipulação do conteúdo de um input e div usando jQuery
+  $('#departureDate').val('01011990');
+  $('#message').text('Erro: campo obrigatório').addClass('error');
+
+  // Aplicar um plugin do jQuery (jQuery Mask Plugin)
+  $('#departureDate').mask('99/99/9999');
+});
+
 let cpfInput = document.getElementById('cpf');
 
 cpfInput.addEventListener('keydown', function (event) {

@@ -21,3 +21,20 @@ input:invalid {
 input:valid {
 	border-color: green;
 }
+
+.highlight {
+	border: 1px solid yellow;
+  }
+  
+  .error {
+	color: red;
+  }
+  
+  .hidden {
+	display: none;
+  }
+  
+  .has-feedback {
+	border: 2px solid green;
+  }
+  
