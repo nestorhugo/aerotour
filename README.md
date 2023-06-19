@@ -102,9 +102,9 @@ jQuery
 
 Web Storage - LocalStorage ou SessionStorage
 
-- [ ] Leitura e escrita de dados simples - dados primivos como string, number, boolean
-- [ ] eitura e escrita de JSON - dado transformado a partir de um objeto
-- [ ] Criar e guardar um dado em um Cookie
+- [x] Leitura e escrita de dados simples - dados primivos como string, number, boolean
+- [x] eitura e escrita de JSON - dado transformado a partir de um objeto
+- [x] Criar e guardar um dado em um Cookie
 
 Requisições assíncronas
 
