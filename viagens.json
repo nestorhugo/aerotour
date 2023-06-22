@@ -1,0 +1,25 @@
+{
+    "voos": [
+      {
+        "id": 1,
+        "destino": "Buenos Aires",
+        "preco": 3636
+      },
+      {
+        "id": 2,
+        "destino": "Recife",
+        "preco": 2318
+      },
+      {
+        "id": 3,
+        "destino": "Porto Seguro",
+        "preco": 1722
+      },
+      {
+        "id": 4,
+        "destino": "Asunción",
+        "preco": 2426
+      }
+    ]
+  }
+  
