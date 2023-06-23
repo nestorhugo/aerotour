@@ -21,9 +21,6 @@ app.get('/destinos', (req, res) => {
     'Porto Seguro',
     'Asunción',
   ];
-  res.json(destinos);
-});
-
-app.get('/destinos', (req, res) => {
   console.log('Requisição GET recebida em /destinos');
+  res.json(destinos);
 });

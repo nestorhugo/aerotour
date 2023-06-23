@@ -34,18 +34,28 @@ $(document).ready(function () {
   });
 });
 
-$(document).ready(function () {
-  $.ajax({
-    url: '/voos',
-    type: 'GET',
-    success: function (voos) {
-      // Manipula os dados retornados
-      var vooList = document.getElementById('voosList');
-      voos.forEach(function (voo) {
-        var li = document.createElement('li');
-        li.textContent = 'Destino: ' + voo.destino + ', Preço: R$ ' + voo.preco;
-        vooList.appendChild(li);
-      });
-    },
-  });
-});
+// $(document).ready(function () {
+//   $.ajax({
+//     url: '/voos',
+//     type: 'GET',
+//     success: function (voos) {
+//       // Manipula os dados retornados
+//       let vooList = document.getElementById('voosList');
+//       voos.forEach(function (voo) {
+//         let li = document.createElement('li');
+//         li.textContent = 'Destino: ' + voo.destino + ', Preço: R$ ' + voo.preco;
+//         vooList.appendChild(li);
+//       });
+//     },
+//   });
+// });
+
+fetch('http://localhost:3000/voos')
+  .then((response) => response.json())
+  .then((data) => escolher(data));
+
+function escolher(voos) {
+  const htmlVoos = voos.map((voos) => `<p>${voos.destino}`);
+  document.getElementById('voosList').innerHTML = htmlVoos;
+  console.log(htmlVoos);
+}
