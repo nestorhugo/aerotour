@@ -35,14 +35,17 @@ $(document).ready(function () {
 });
 
 $(document).ready(function () {
-  $('#btnVoos').click(function () {
-    $.ajax({
-      url: 'http://localhost:3000/voos',
-      type: 'GET',
-      success: function (voos) {
-        // Aqui você pode manipular os dados retornados da rota /voos
-        console.log(voos);
-      },
-    });
+  $.ajax({
+    url: '/voos',
+    type: 'GET',
+    success: function (voos) {
+      // Manipula os dados retornados
+      var vooList = document.getElementById('voosList');
+      voos.forEach(function (voo) {
+        var li = document.createElement('li');
+        li.textContent = 'Destino: ' + voo.destino + ', Preço: R$ ' + voo.preco;
+        vooList.appendChild(li);
+      });
+    },
   });
 });

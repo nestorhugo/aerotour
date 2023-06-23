@@ -44,3 +44,21 @@ for (var i = 0; i < imagens.length; i++) {
     this.style.border = 'none';
   };
 }
+
+$(document).ready(function () {
+  $('#btnBuscarCep').click(function () {
+    var cep = $('#cepInput').val();
+    $.ajax({
+      url: 'https://viacep.com.br/ws/' + cep + '/json/',
+      method: 'GET',
+      success: function (response) {
+        $('#cidade').text(
+          'Você está procurando viagens para ' + response.localidade
+        );
+      },
+      error: function () {
+        $('#cidade').text('Não foi possível obter o nome da cidade.');
+      },
+    });
+  });
+});
