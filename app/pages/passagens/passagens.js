@@ -34,22 +34,6 @@ $(document).ready(function () {
   });
 });
 
-// $(document).ready(function () {
-//   $.ajax({
-//     url: '/voos',
-//     type: 'GET',
-//     success: function (voos) {
-//       // Manipula os dados retornados
-//       let vooList = document.getElementById('voosList');
-//       voos.forEach(function (voo) {
-//         let li = document.createElement('li');
-//         li.textContent = 'Destino: ' + voo.destino + ', Preço: R$ ' + voo.preco;
-//         vooList.appendChild(li);
-//       });
-//     },
-//   });
-// });
-
 fetch('http://localhost:3000/voos')
   .then((response) => response.json())
   .then((data) => escolher(data));

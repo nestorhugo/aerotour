@@ -1,31 +1,55 @@
 'use strict';
 
-document
-  .getElementById('loginForm')
-  .addEventListener('submit', function (event) {
-    event.preventDefault(); // Impede o envio do formulário
+const loginForm = document.getElementById('loginForm');
 
-    // Verifica se os campos são válidos
-    var emailInput = document.getElementById('email');
-    var senhaInput = document.getElementById('senha');
+loginForm.addEventListener('submit', function (event) {
+  event.preventDefault();
 
-    if (emailInput.checkValidity() && senhaInput.checkValidity()) {
-      alert('Login bem-sucedido!');
-    } else {
-      if (!emailInput.checkValidity()) {
-        emailInput.setCustomValidity('Por favor, preencha um email válido.');
-      } else {
-        emailInput.setCustomValidity('');
-      }
+  const email = document.getElementById('email').value;
+  const senha = document.getElementById('senha').value;
 
-      if (!senhaInput.checkValidity()) {
-        senhaInput.setCustomValidity('Por favor, preencha o campo de senha.');
-      } else {
-        senhaInput.setCustomValidity('');
-      }
+  if (validarEmail(email) && validarSenha(senha)) {
+    localStorage.setItem('email', email);
+    localStorage.setItem('senha', senha);
 
-      // Atualiza a validação dos campos para exibir as mensagens personalizadas
-      emailInput.reportValidity();
-      senhaInput.reportValidity();
-    }
-  });
+    window.location.href = '/index.html';
+  } else {
+    alert('Email ou senha inválidos. Por favor, tente novamente.');
+  }
+});
+
+function validarEmail(email) {
+  const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+  return emailRegex.test(email);
+}
+
+function validarSenha(senha) {
+  if (senha.length < 6) {
+    return false;
+  }
+  const numerosRegex = /[0-9]/;
+  if (!numerosRegex.test(senha)) {
+    return false;
+  }
+  const maiusculaRegex = /[A-Z]/;
+  if (!maiusculaRegex.test(senha)) {
+    return false;
+  }
+  const minusculaRegex = /[a-z]/;
+  if (!minusculaRegex.test(senha)) {
+    return false;
+  }
+  return true;
+}
+
+//Leitura e escrita de dados simples:
+localStorage.setItem('nome', 'Nestor');
+const nome = localStorage.getItem('nome');
+console.log(nome);
+
+//Leitura e escrita de JSON:
+const pessoa = { nome: 'Roni', idade: 39 };
+localStorage.setItem('pessoa', JSON.stringify(pessoa));
+const pessoaSalva = JSON.parse(localStorage.getItem('pessoa'));
+console.log(pessoaSalva.nome);
+console.log(pessoaSalva.idade);

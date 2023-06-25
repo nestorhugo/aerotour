@@ -29,7 +29,6 @@ module.exports = {
     'no-trailing-spaces': 2,
     'no-unused-vars': 1,
     'no-use-before-define': [2, 'nofunc'],
-    'object-curly-spacing': [2, 'never'],
     quotes: [2, 'single', 'avoid-escape'],
     semi: [2, 'always'],
     'keyword-spacing': [

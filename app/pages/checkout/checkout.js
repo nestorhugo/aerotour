@@ -46,30 +46,6 @@ cpfInput.addEventListener('keydown', function (event) {
   }
 });
 
-let nomeCompleto = document.getElementById('nomeCompleto').value.trim();
-let cpf = document.getElementById('cpf').value.trim();
-let numeroCartao = document.getElementById('numeroCartao').value.trim();
-let validade = document.getElementById('validade').value.trim();
-let cvv = document.getElementById('cvv').value.trim();
-
-const dadosCompra = {
-  nomeCompleto,
-  cpf,
-  numeroCartao,
-  validade,
-  cvv,
-};
-
-const dadosCompraArmazenados = localStorage.getItem('dadosCompra');
-if (dadosCompraArmazenados) {
-  const dadosCompra = JSON.parse(dadosCompraArmazenados);
-  console.log(dadosCompra.nomeCompleto);
-  console.log(dadosCompra.cpf);
-  console.log(dadosCompra.numeroCartao);
-  console.log(dadosCompra.validade);
-  console.log(dadosCompra.cvv);
-}
-
 localStorage.setItem('dadosCompra', JSON.stringify(dadosCompra));
 
 function validarFormularioCompra() {
@@ -111,24 +87,3 @@ function finalizarCompraComSucesso(mensagem, tempo) {
 }
 
 finalizarCompraComSucesso('Compra realizada com sucesso!', 2000);
-
-function criarCookie(nome, valor, diasExpiracao) {
-  var dataExpiracao = new Date();
-  dataExpiracao.setTime(
-    dataExpiracao.getTime() + diasExpiracao * 24 * 60 * 60 * 1000
-  );
-  var expira = 'expires=' + dataExpiracao.toUTCString();
-  document.cookie = nome + '=' + valor + ';' + expira + ';path=/';
-}
-
-criarCookie(
-  'dadosCompra',
-  JSON.stringify({
-    nomeCompleto: nomeCompleto,
-    cpf: cpf,
-    numeroCartao: numeroCartao,
-    validade: validade,
-    cvv: cvv,
-  }),
-  2
-);
