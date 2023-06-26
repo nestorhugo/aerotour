@@ -104,10 +104,10 @@ Web Storage - LocalStorage ou SessionStorage
 
 - [x] Leitura e escrita de dados simples - dados primivos como string, number, boolean
 - [x] eitura e escrita de JSON - dado transformado a partir de um objeto
-- [ ] Criar e guardar um dado em um Cookie
+- [x] Criar e guardar um dado em um Cookie
 
 Requisições assíncronas
 
 - [x] Requisições AJAX para uma implementação funcional do backend em ExpressJS na plataforma Node
-- [ ] (Obrigatório) Requisições AJAX para uma API Fake - JSON Server
+- [x] (Obrigatório) Requisições AJAX para uma API Fake - JSON Server
 - [x] Requisições AJAX para uma API Rest pública qualquer (Busca CEP API ou IBGE API ou outra).

@@ -53,3 +53,19 @@ localStorage.setItem('pessoa', JSON.stringify(pessoa));
 const pessoaSalva = JSON.parse(localStorage.getItem('pessoa'));
 console.log(pessoaSalva.nome);
 console.log(pessoaSalva.idade);
+
+document.cookie = 'nome=Aerotour';
+
+function getCookieValue(cookieNome) {
+  const cookies = document.cookie.split(';');
+  for (let i = 0; i < cookies.length; i++) {
+    const cookie = cookies[i].trim();
+    if (cookie.startsWith(cookieNome + '=')) {
+      return cookie.substring(cookieNome.length + 1);
+    }
+  }
+  return null;
+}
+
+const nomeCookie = getCookieValue('nome');
+console.log(nomeCookie);
